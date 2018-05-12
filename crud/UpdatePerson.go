@@ -7,6 +7,6 @@ import (
 )
 
 // UpdatePerson updates a person by id
-func UpdatePerson(req http.ResponseWriter, res *http.Request) {
-	log.Fatal(fmt.Sprintf("logging a reques to %v", res))
+func UpdatePerson(res http.ResponseWriter, req *http.Request) {
+	log.Fatal(fmt.Sprintf("logging a reques to %v", req))
 }
