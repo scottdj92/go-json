@@ -8,6 +8,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// CreatePerson creates a person within the slice/db
 func CreatePerson(res http.ResponseWriter, req *http.Request) {
 	params := mux.Vars(req)
 	var person data.Person
